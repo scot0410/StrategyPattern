@@ -1,9 +1,9 @@
 import java.lang.reflect.Method;
 
-public class ChunLi extends Fighter{
+public class ChunLi extends Fighter implements JumpBehavior, SuperCombo{
 
     @Override
-    void displayActions(){
+    void display(){
         Method[] methods = ChunLi.class.getDeclaredMethods();
         System.out.println("Here's what ChunLi can do:");
         System.out.println("------------------");
@@ -11,16 +11,28 @@ public class ChunLi extends Fighter{
             System.out.println(method.getName());
         }
         System.out.println("------------------");
-
     }
 
     @Override
     void kick(){
-        System.out.println("ChunLi KICK!!");
+        System.out.println("~~~~~~~CHUNLI KICK~~~~~~~");
     }
 
     @Override
-    void jump(){
-        System.out.println("ChunLi JUMP");
+    void punch(){
+        System.out.println("~~~~~~~CHUNLI PUNCH~~~~~~~");
+    }
+
+    @Override
+    public void jump(){
+        System.out.println("~~~~~~~CHUNLI JUMP~~~~~~~");
+    }
+
+    //We have to reimplement this method even though it performs the same task in Ryu...
+    @Override
+    public void superCombo(){
+        jump();
+        kick();
+        punch();
     }
 }
