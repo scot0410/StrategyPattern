@@ -1,9 +1,6 @@
 import java.lang.reflect.Method;
 
 public class Fighter{
-    void display(){
-        System.out.println("this is the fighter!!");
-    }
 
     void displayActions(){
         Method[] methods = Fighter.class.getDeclaredMethods();

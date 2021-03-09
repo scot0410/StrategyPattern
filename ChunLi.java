@@ -15,11 +15,6 @@ public class ChunLi extends Fighter{
     }
 
     @Override
-    void display(){
-        System.out.println("~~ChunLi~~");
-    }
-
-    @Override
     void kick(){
         System.out.println("ChunLi KICK!!");
     }
