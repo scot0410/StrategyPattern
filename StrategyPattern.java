@@ -11,6 +11,6 @@ public class StrategyPattern{
         System.out.println("ChunLi makes his first move...");
         chunLi.roll();
         System.out.println("...ChunLi shouldn't be able to do that");
-
+        System.out.println("");
     }
 }
