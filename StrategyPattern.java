@@ -3,13 +3,13 @@ public class StrategyPattern{
         System.out.println("~~~ Fight!! ~~~");
 
         Fighter fighter = new Fighter();
-        fighter.displayActions();
+        fighter.display();
 
         ChunLi chunLi = new ChunLi();
-        chunLi.displayActions();
+        chunLi.display();
 
         System.out.println("ChunLi makes his first move...");
-        chunLi.punch();
+        chunLi.roll();
         System.out.println("...ChunLi shouldn't be able to do that");
 
     }

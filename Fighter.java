@@ -2,7 +2,7 @@ import java.lang.reflect.Method;
 
 public class Fighter{
 
-    void displayActions(){
+    void display(){
         Method[] methods = Fighter.class.getDeclaredMethods();
         System.out.println("Here's what a fighter can do:");
         System.out.println("------------------");
@@ -16,12 +16,12 @@ public class Fighter{
         System.out.println("KICK!!");
     }
     void punch(){
-        System.out.println("~~~~~~~PUNCH~~~~~~~");
+        System.out.println("~~~~~~~FIGTER PUNCH~~~~~~~");
     }
     void jump(){
-        System.out.println("JUMP");
+        System.out.println("~~~~~~~FIGTER JUMP~~~~~~~");
     }
     void roll(){
-        System.out.println("ROLL");
+        System.out.println("~~~~~~~FIGTER ROLL~~~~~~~");
     }
 }
