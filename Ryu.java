@@ -1,32 +1,27 @@
 import java.lang.reflect.Method;
 
-public class Ryu extends Fighter implements JumpBehavior, SuperCombo{
+public class Ryu extends Fighter implements JumpBehavior{
     void display(){
         Method[] methods = Ryu.class.getDeclaredMethods();
         System.out.println("Here's what Ryu can do:");
-        System.out.println("-----------------------------------");
+        System.out.println("----------------------");
         for(Method method : methods){
             System.out.print(method.getName());
             System.out.print(" | ");
         }
         System.out.println("");
-        System.out.println("------------------------------------");
-    }
-
-    @Override
-    public void jump(){
-        System.out.println("~~~~~~~RYU JUMP~~~~~~~");
+        System.out.println("----------------------");
     }
 
     void kick(){
-        System.out.println("~~~~~~~RYU PUNCH~~~~~~~");
+        System.out.println("~~~~~~~RYU FAKE-OUT HADOKEN KCIK~~~~~~~");
     }
 
-    //We have to reimplement this method even though it performs the same task in ChunLi...
+    //We have to reimplement this method even though it performs the same task in Ryu...
     @Override
-    public void superCombo(){
-        jump();
-        kick();
-        punch();
+    public void jump(){
+        System.out.println("~~~~~~~JUMP~~~~~~~");
     }
+
+
 }

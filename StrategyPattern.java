@@ -19,17 +19,18 @@ public class StrategyPattern{
         System.out.println("Ryu counters...");
         ryu.kick();
 
-        System.out.println("ChunLi and Ryu's Super Combo Gauge is full!!! ");
-        System.out.println("ChunLi does her Super Move!! ");
-        chunLi.superCombo();
+        System.out.println("Chun-Li narrowly avoids the attack!! ");
+        chunLi.jump();
 
-        System.out.println("Ryu must counter with his last strength...");
-        ryu.superCombo();
+        System.out.println("Ryu jumps as he approaches to attack...");
+        ryu.jump();
 
-        System.out.println("They both did the same move, but with different implementations.. ");
+        System.out.println("");
+        System.out.println("They both did the same jump move, but with different implementations.. ");
+        System.out.println("");
     }
 }
 
 /**
- *
+ * Using inheritance requires us to override and reimplement the same behavior.
  */
