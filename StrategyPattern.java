@@ -1,29 +1,37 @@
 public class StrategyPattern{
     public static void main(String[] args){
         System.out.println("~~~ Fight!! ~~~");
+        System.out.println("Here's the fighter's moves: ");
 
         Fighter fighter = new Fighter();
+        Fighter chunLi = new ChunLi();
+        Fighter ryu = new Ryu();
+
+        //to print each display on one line..
+//        System.out.print(fighter.display());
+//        System.out.print(chunLi.display());
+//        System.out.print(ryu.display());
+
+
+
         fighter.display();
-
-        ChunLi chunLi = new ChunLi();
         chunLi.display();
-
-        Ryu ryu = new Ryu();
         ryu.display();
 
-        System.out.println("ChunLi makes her first move...");
-        chunLi.punch();
+        System.out.println("Chun-li makes the first move...");
+        chunLi.performJump();
+        ryu.performJump();
 
-        System.out.println("Ryu counters...");
-        ryu.kick();
-
-        System.out.println("ChunLi and Ryu's Super Combo Gauge is full!!! ");
-        System.out.println("ChunLi does her Super Move!! ");
-        chunLi.superCombo();
-
-        System.out.println("Ryu must counter with his last strength...");
-        ryu.superCombo();
-
-        System.out.println("They both did the same move, but with different implementations.. ");
+        chunLi.performRoll();
+        ryu.performRoll();
     }
 }
+
+/**
+ * We separate behaviors to their own interface, and have classes inherit the behavior they'll use.
+ *
+ * ~~ Design Principle ~~
+ * Identify the aspects of your application
+ * that vary and separate them from what stays the same.
+ *
+ */
