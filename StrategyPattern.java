@@ -30,7 +30,7 @@ public class StrategyPattern{
         chunLi.performJump();
 
         System.out.println("");
-        System.out.println("!!! The fight ensues !!!");
+        System.out.println("!!! The fight ensues, but not very dynamically... !!!");
         System.out.println("");
 
     }

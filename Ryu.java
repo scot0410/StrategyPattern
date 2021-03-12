@@ -33,13 +33,4 @@ public class Ryu extends Fighter{
         System.out.println("~~~~~~~RYU FAKE-OUT HADOKEN KICK~~~~~~~");
     }
 
-
-
-//    //We have to reimplement this method even though it performs the same task in ChunLi...
-//    @Override
-//    public void superCombo(){
-//        jump();
-//        kick();
-//        punch();
-//    }
 }
