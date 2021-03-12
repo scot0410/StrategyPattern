@@ -3,7 +3,7 @@ import java.lang.reflect.Method;
 public class ChunLi extends Fighter{
 
     public ChunLi(){
-        jumpBehavior = new BackwardJump();
+        jumpBehavior = new ForwardJump();
         rollBehavior = new BackwardRoll();
     }
 
@@ -11,13 +11,13 @@ public class ChunLi extends Fighter{
     void display(){
         Method[] methods = ChunLi.class.getDeclaredMethods();
         System.out.println("Here's what ChunLi can do:");
-        System.out.println("-----------------");
+        System.out.println(" -----------------------");
         for(Method method : methods){
             System.out.print(method.getName());
             System.out.print(" | ");
         }
         System.out.println("");
-        System.out.println("------------------");
+        System.out.println(" -----------------------");
     }
 
     //These moves are unique to Chun-li

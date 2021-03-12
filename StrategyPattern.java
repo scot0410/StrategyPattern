@@ -7,23 +7,27 @@ public class StrategyPattern{
         Fighter chunLi = new ChunLi();
         Fighter ryu = new Ryu();
 
-        //to print each display on one line..
-//        System.out.print(fighter.display());
-//        System.out.print(chunLi.display());
-//        System.out.print(ryu.display());
-
-
-
         fighter.display();
         chunLi.display();
         ryu.display();
 
-        System.out.println("Chun-li makes the first move...");
-        chunLi.performJump();
+        System.out.println("Ryu makes the first move...");
         ryu.performJump();
 
-        chunLi.performRoll();
+        System.out.println("Chun-Li attacks!!!");
+        chunLi.punch();
+
+        System.out.println("Ryu rolls back to reduce the damage...");
         ryu.performRoll();
+
+        System.out.println("Ryu counters!!!");
+        ryu.kick();
+
+        System.out.println("Chun-Li dodges the attack!!");
+        chunLi.performRoll();
+        chunLi.performJump();
+
+        System.out.println("!!! The fight ensues !!!");
     }
 }
 
