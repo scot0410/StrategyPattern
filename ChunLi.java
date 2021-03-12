@@ -3,20 +3,17 @@ import java.lang.reflect.Method;
 public class ChunLi extends Fighter{
 
     @Override
-    void displayActions(){
+    void display(){
         Method[] methods = ChunLi.class.getDeclaredMethods();
         System.out.println("Here's what ChunLi can do:");
-        System.out.println("------------------");
+        System.out.println("----------------------");
         for(Method method : methods){
-            System.out.println(method.getName());
+            System.out.print(method.getName());
+            System.out.print(" | ");
         }
-        System.out.println("------------------");
+        System.out.println("");
+        System.out.println("----------------------");
 
-    }
-
-    @Override
-    void display(){
-        System.out.println("~~ChunLi~~");
     }
 
     @Override
