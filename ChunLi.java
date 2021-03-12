@@ -6,11 +6,13 @@ public class ChunLi extends Fighter{
     void display(){
         Method[] methods = ChunLi.class.getDeclaredMethods();
         System.out.println("Here's what ChunLi can do:");
-        System.out.println("------------------");
+        System.out.println("----------------------");
         for(Method method : methods){
-            System.out.println(method.getName());
+            System.out.print(method.getName());
+            System.out.print(" | ");
         }
-        System.out.println("------------------");
+        System.out.println("");
+        System.out.println("----------------------");
 
     }
 
