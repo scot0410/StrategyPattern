@@ -5,7 +5,7 @@ public class ChunLi extends Fighter{
     @Override
     void display(){
         Method[] methods = ChunLi.class.getDeclaredMethods();
-        System.out.println("Here's what ChunLi can do:");
+        System.out.println("Here's what Chun-Li can do:");
         System.out.println("----------------------");
         for(Method method : methods){
             System.out.print(method.getName());
@@ -18,11 +18,11 @@ public class ChunLi extends Fighter{
 
     @Override
     void kick(){
-        System.out.println("~~~~~~~CHUNLI KICK~~~~~~~");
+        System.out.println("~~~~~~~CHUN-LI KICK~~~~~~~");
     }
 
     @Override
     void punch(){
-        System.out.println("~~~~~~~CHUNLI PUNCH~~~~~~~");
+        System.out.println("~~~~~~~CHUN-LI PUNCH~~~~~~~");
     }
 }
