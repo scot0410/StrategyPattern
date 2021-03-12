@@ -17,7 +17,7 @@ public class StrategyPattern{
     }
 
     /**
-     * When we extend a class, we bring all its methods along with it.
+     * When we extend a class, we bring all it's methods along with it.
      * Trying again, but with inheritance...
      */
 }
