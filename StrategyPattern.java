@@ -34,7 +34,7 @@ public class StrategyPattern{
         System.out.println("!!! The fight ensues, but not very dynamically... !!!");
         System.out.println("");
 
-        System.out.println("Chun-Li and Ryu each call the same performJump method, but with different outcomes..");
+        System.out.println("Chun-Li and Ryu each call the same performJump method, but with different outcomes.");
         System.out.println("");
 
     }

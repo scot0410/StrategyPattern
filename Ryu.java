@@ -14,9 +14,10 @@ public class Ryu extends Fighter{
          *
          */
 
-        //<- we have access to jumpBehavior at the superClass
+        //we have access to jumpBehavior at the superClass
         this.jumpBehavior = new ForwardJump();
         this.rollBehavior = new BackwardRoll();
+        // now we can set the concrete behavior we want here ^
     }
     void display(){
         Method[] methods = Ryu.class.getDeclaredMethods();
