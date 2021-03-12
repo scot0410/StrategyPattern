@@ -15,7 +15,7 @@ public class StrategyPattern{
         System.out.println("");
         System.out.println("Ryu makes the first move...");
         //performJump is decided at runtime
-        ryu.performJump();// <-- THIS perForm jump is different than Chun-Li
+        ryu.performJump();// <-- THIS perform jump is different than Chun-Li
 
         System.out.println("Chun-Li attacks!!!");
         chunLi.punch();
