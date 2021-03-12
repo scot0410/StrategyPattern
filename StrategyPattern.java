@@ -14,7 +14,8 @@ public class StrategyPattern{
 
         System.out.println("");
         System.out.println("Ryu makes the first move...");
-        ryu.performJump();
+        //performJump is decided at runtime
+        ryu.performJump();// <-- THIS perForm jump is different than Chun-Li
 
         System.out.println("Chun-Li attacks!!!");
         chunLi.punch();
@@ -27,10 +28,13 @@ public class StrategyPattern{
 
         System.out.println("Chun-Li dodges the attack!!");
         chunLi.performRoll();
-        chunLi.performJump();
+        chunLi.performJump(); // <-- THIS perForm jump is different than Ryu
 
         System.out.println("");
         System.out.println("!!! The fight ensues, but not very dynamically... !!!");
+        System.out.println("");
+
+        System.out.println("Chun-Li and Ryu each call the same performJump method, but with different outcomes..");
         System.out.println("");
 
     }

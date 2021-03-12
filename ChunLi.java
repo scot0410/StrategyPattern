@@ -12,7 +12,7 @@ public class ChunLi extends Fighter{
      *
      */
     public ChunLi(){
-        this.jumpBehavior = new ForwardJump();
+        this.jumpBehavior = new BackwardJump();
         this.rollBehavior = new BackwardRoll();
     }
 

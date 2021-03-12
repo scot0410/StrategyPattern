@@ -13,6 +13,8 @@ public class Ryu extends Fighter{
          *   ^ This allows us to change the jumpBehavior to BackwardJump when we want that behavior
          *
          */
+
+        //<- we have access to jumpBehavior at the superClass
         this.jumpBehavior = new ForwardJump();
         this.rollBehavior = new BackwardRoll();
     }
