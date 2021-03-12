@@ -5,7 +5,7 @@ public class ChunLi extends Fighter implements JumpBehavior{
     @Override
     void display(){
         Method[] methods = ChunLi.class.getDeclaredMethods();
-        System.out.println("Here's what ChunLi can do:");
+        System.out.println("Here's what Chun-Li can do:");
         System.out.println("------------------------------");
         for(Method method : methods){
             System.out.print(method.getName());
