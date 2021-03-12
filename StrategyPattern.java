@@ -44,4 +44,8 @@ public class StrategyPattern{
 /**
  * We use setters to change the behavior dynamically... :)
  * Now Ryu can jump forward, backward, and do the special jump attack.
+ *
+ * Changes - new fighter, new move, dynamic setters.
+ *
+ * This is the Strategy Pattern :)
  */
