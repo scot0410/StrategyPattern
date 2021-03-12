@@ -22,7 +22,7 @@ public class StrategyPattern{
         System.out.println("Chun-Li narrowly avoids the attack!! ");
         chunLi.jump();
 
-        System.out.println("Ryu jumps as he approaches to attack...");
+        System.out.println("Ryu jumps as he approaches...");
         ryu.jump();
 
         System.out.println("");
