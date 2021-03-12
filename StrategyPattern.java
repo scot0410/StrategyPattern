@@ -7,47 +7,35 @@ public class StrategyPattern{
         Fighter fighter = new Fighter();
         Fighter chunLi = new ChunLi();
         Fighter ryu = new Ryu();
+        Fighter ken = new Ken();
 
         fighter.display();
         chunLi.display();
         ryu.display();
+        ken.display();
 
         System.out.println("");
         System.out.println("Ryu makes the first move...");
         ryu.performJump();
 
-        System.out.println("Chun-Li attacks!!!");
-        chunLi.punch();
+        System.out.println("Ken moves back to avoid damage...");
+        ken.performJump();
 
-        System.out.println("Ryu rolls back to reduce the damage...");
-        ryu.performRoll();
+        System.out.println("Ryu performs his special jump attack, his oppenent didn't see it coming...");
+        ryu.setJumpBehavior(new Shouryuken()); //< -- we changed the the JumpBehavior dynamically with the setter
+        ryu.performJump(); //<-- this jump move is different than it was before..
 
-        System.out.println("Ryu counters!!!");
-        ryu.kick();
-
-        System.out.println("Chun-Li dodges the attack!!");
-        chunLi.performRoll();
-        chunLi.performJump();
+        System.out.println("Shockingly!! Ken can do the same special jump attack move...");
+        ken.setJumpBehavior(new Shouryuken());
+        ken.performJump();
 
         System.out.println("");
-        System.out.println("!!! The fight ensues !!!");
+        System.out.println("!!! The fight ensues dynamically !!!");
         System.out.println("");
 
     }
 }
 
 /**
- * We separate behaviors to their own interface, and have class implementations of that behavior.
- * Then when fighters want to use a certain behavior, they can be set within the ctor.
- *
- * ~~ Design Principle ~~
- * Identify the aspects of your application
- * that vary and separate them from what stays the same.
- *
- * ~~ OO Principles ~~
- * - Encapsulate what varies -> Jump and Roll Behavior
- * - Favor Composition over inheritance -> Forward/Backward Jump, Forward/Backward Roll
- * - Program to the interface, not the implementaion -> JumpBehavior jumpBehavior = new ForwardJump()
- *
- *  Finally, let's incorporate dynamic behavior changes.
+ * We use setters to change the behavior dynamically... :)
  */
