@@ -1,6 +1,10 @@
 import java.lang.reflect.Method;
 
 public class Fighter{
+    /**
+     * ~~ Design Principle ~~
+     * Favor composition over inheritance.
+     */
     JumpBehavior jumpBehavior;
     RollBehavior rollBehavior;
 
@@ -31,8 +35,3 @@ public class Fighter{
         rollBehavior.roll();
     }
 }
-
-/**
- * ~~ Design Principle ~~
- * Favor composition over inheritance.
- */

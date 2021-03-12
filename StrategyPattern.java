@@ -1,5 +1,6 @@
 public class StrategyPattern{
     public static void main(String[] args){
+        System.out.println("");
         System.out.println("~~~ Fight!! ~~~");
         System.out.println("Here's the fighter's moves: ");
 
@@ -11,6 +12,7 @@ public class StrategyPattern{
         chunLi.display();
         ryu.display();
 
+        System.out.println("");
         System.out.println("Ryu makes the first move...");
         ryu.performJump();
 
@@ -27,7 +29,10 @@ public class StrategyPattern{
         chunLi.performRoll();
         chunLi.performJump();
 
+        System.out.println("");
         System.out.println("!!! The fight ensues !!!");
+        System.out.println("");
+
     }
 }
 
@@ -38,4 +43,8 @@ public class StrategyPattern{
  * Identify the aspects of your application
  * that vary and separate them from what stays the same.
  *
+ * ~~ OO Principles ~~
+ * - Encapsulate what varies
+ * - Favor Composition over inheritance
+ * - Program to the interface, not the implementaion
  */

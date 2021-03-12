@@ -3,8 +3,8 @@ import java.lang.reflect.Method;
 public class Ryu extends Fighter{
 
     public Ryu(){
-        jumpBehavior = new ForwardJump();
-        rollBehavior = new BackwardRoll();
+        this.jumpBehavior = new ForwardJump();
+        this.rollBehavior = new BackwardRoll();
     }
     void display(){
         Method[] methods = Ryu.class.getDeclaredMethods();
