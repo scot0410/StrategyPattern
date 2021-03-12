@@ -37,14 +37,17 @@ public class StrategyPattern{
 }
 
 /**
- * We separate behaviors to their own interface, and have classes inherit the behavior they'll use.
+ * We separate behaviors to their own interface, and have class implementations of that behavior.
+ * Then when fighters want to use a certain behavior, they can be set within the ctor.
  *
  * ~~ Design Principle ~~
  * Identify the aspects of your application
  * that vary and separate them from what stays the same.
  *
  * ~~ OO Principles ~~
- * - Encapsulate what varies
- * - Favor Composition over inheritance
- * - Program to the interface, not the implementaion
+ * - Encapsulate what varies -> Jump and Roll Behavior
+ * - Favor Composition over inheritance -> Forward/Backward Jump, Forward/Backward Roll
+ * - Program to the interface, not the implementaion -> JumpBehavior jumpBehavior = new ForwardJump()
+ *
+ *  Finally, let's incorporate dynamic behavior changes.
  */
