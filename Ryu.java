@@ -4,12 +4,13 @@ public class Ryu extends Fighter implements JumpBehavior, SuperCombo{
     void display(){
         Method[] methods = Ryu.class.getDeclaredMethods();
         System.out.println("Here's what Ryu can do:");
-        System.out.println("------------------");
+        System.out.println("-----------------------------------");
         for(Method method : methods){
-            System.out.println(method.getName());
+            System.out.print(method.getName());
+            System.out.print(" | ");
         }
-        System.out.println("------------------");
-
+        System.out.println("");
+        System.out.println("------------------------------------");
     }
 
     @Override

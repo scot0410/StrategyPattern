@@ -5,12 +5,13 @@ public class Fighter{
     void display(){
         Method[] methods = Fighter.class.getDeclaredMethods();
         System.out.println("Here's what a fighter can do:");
-        System.out.println("------------------");
+        System.out.println("-----------------------");
         for(Method method : methods){
-                System.out.println(method.getName());
-            }
-        System.out.println("------------------");
-
+            System.out.print(method.getName());
+            System.out.print(" | ");
+        }
+        System.out.println("");
+        System.out.println("-----------------------");
     }
     void kick(){
         System.out.println("~~~~~~~FIGHTER KICK~~~~~~~");

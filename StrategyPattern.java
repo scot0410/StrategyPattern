@@ -1,5 +1,6 @@
 public class StrategyPattern{
     public static void main(String[] args){
+        System.out.println("");
         System.out.println("~~~ Fight!! ~~~");
 
         Fighter fighter = new Fighter();
@@ -11,6 +12,7 @@ public class StrategyPattern{
         Ryu ryu = new Ryu();
         ryu.display();
 
+        System.out.println("");
         System.out.println("ChunLi makes her first move...");
         chunLi.punch();
 
@@ -27,3 +29,7 @@ public class StrategyPattern{
         System.out.println("They both did the same move, but with different implementations.. ");
     }
 }
+
+/**
+ *
+ */
