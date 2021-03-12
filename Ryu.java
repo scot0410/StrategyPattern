@@ -14,7 +14,7 @@ public class Ryu extends Fighter implements JumpBehavior{
     }
 
     void kick(){
-        System.out.println("~~~~~~~RYU FAKE-OUT HADOKEN KCIK~~~~~~~");
+        System.out.println("~~~~~~~RYU FAKE-OUT HADOKEN KICK~~~~~~~");
     }
 
     //We have to reimplement this method even though it performs the same task in Ryu...
