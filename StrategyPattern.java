@@ -29,6 +29,11 @@ public class StrategyPattern{
         ken.setJumpBehavior(new Shouryuken());
         ken.performJump();
 
+        System.out.println("Ryu attemps to avoid the attack");
+        ryu.setJumpBehavior(new BackwardJump()); //< -- we changed the the JumpBehavior dynamically with the setter
+        ryu.performJump(); //<-- this jump move is different than it was before..
+
+
         System.out.println("");
         System.out.println("!!! The fight ensues dynamically !!!");
         System.out.println("");
@@ -38,4 +43,5 @@ public class StrategyPattern{
 
 /**
  * We use setters to change the behavior dynamically... :)
+ * Now Ryu can jump forward, backward, and do the special jump attack.
  */
